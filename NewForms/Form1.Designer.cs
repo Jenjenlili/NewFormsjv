@@ -30,24 +30,26 @@
         {
             this.btn_register = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_StudentId = new System.Windows.Forms.TextBox();
-            this.txt_LastN = new System.Windows.Forms.TextBox();
-            this.txt_age = new System.Windows.Forms.TextBox();
-            this.txt_FirstN = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cb_gender = new System.Windows.Forms.ComboBox();
+            this.cb_program = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txt_MiddleN = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cb_program = new System.Windows.Forms.ComboBox();
-            this.cb_gender = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_FirstN = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_age = new System.Windows.Forms.TextBox();
+            this.txt_LastN = new System.Windows.Forms.TextBox();
+            this.txt_StudentId = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_refresh = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -85,87 +87,33 @@
             this.panel1.Size = new System.Drawing.Size(982, 301);
             this.panel1.TabIndex = 1;
             // 
-            // label1
+            // cb_gender
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student ID:";
+            this.cb_gender.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_gender.FormattingEnabled = true;
+            this.cb_gender.Location = new System.Drawing.Point(346, 228);
+            this.cb_gender.Name = "cb_gender";
+            this.cb_gender.Size = new System.Drawing.Size(211, 33);
+            this.cb_gender.TabIndex = 14;
             // 
-            // label2
+            // cb_program
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Last Name:";
+            this.cb_program.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_program.FormattingEnabled = true;
+            this.cb_program.Location = new System.Drawing.Point(674, 49);
+            this.cb_program.Name = "cb_program";
+            this.cb_program.Size = new System.Drawing.Size(287, 33);
+            this.cb_program.TabIndex = 13;
             // 
-            // label3
+            // label7
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 200);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Age:";
-            // 
-            // txt_StudentId
-            // 
-            this.txt_StudentId.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_StudentId.Location = new System.Drawing.Point(31, 46);
-            this.txt_StudentId.Name = "txt_StudentId";
-            this.txt_StudentId.Size = new System.Drawing.Size(281, 33);
-            this.txt_StudentId.TabIndex = 3;
-            // 
-            // txt_LastN
-            // 
-            this.txt_LastN.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_LastN.Location = new System.Drawing.Point(31, 135);
-            this.txt_LastN.Name = "txt_LastN";
-            this.txt_LastN.Size = new System.Drawing.Size(281, 33);
-            this.txt_LastN.TabIndex = 4;
-            // 
-            // txt_age
-            // 
-            this.txt_age.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_age.Location = new System.Drawing.Point(31, 228);
-            this.txt_age.Name = "txt_age";
-            this.txt_age.Size = new System.Drawing.Size(281, 33);
-            this.txt_age.TabIndex = 5;
-            // 
-            // txt_FirstN
-            // 
-            this.txt_FirstN.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_FirstN.Location = new System.Drawing.Point(346, 135);
-            this.txt_FirstN.Name = "txt_FirstN";
-            this.txt_FirstN.Size = new System.Drawing.Size(281, 33);
-            this.txt_FirstN.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(341, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 25);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "First Name:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(666, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 25);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Program:";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(341, 198);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 25);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Gender:";
             // 
             // txt_MiddleN
             // 
@@ -185,33 +133,87 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Midlle Name:";
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(341, 198);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 25);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Gender:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(666, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 25);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Program:";
             // 
-            // cb_program
+            // txt_FirstN
             // 
-            this.cb_program.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_program.FormattingEnabled = true;
-            this.cb_program.Location = new System.Drawing.Point(674, 49);
-            this.cb_program.Name = "cb_program";
-            this.cb_program.Size = new System.Drawing.Size(287, 33);
-            this.cb_program.TabIndex = 13;
+            this.txt_FirstN.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_FirstN.Location = new System.Drawing.Point(346, 135);
+            this.txt_FirstN.Name = "txt_FirstN";
+            this.txt_FirstN.Size = new System.Drawing.Size(281, 33);
+            this.txt_FirstN.TabIndex = 7;
             // 
-            // cb_gender
+            // label4
             // 
-            this.cb_gender.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_gender.FormattingEnabled = true;
-            this.cb_gender.Location = new System.Drawing.Point(346, 228);
-            this.cb_gender.Name = "cb_gender";
-            this.cb_gender.Size = new System.Drawing.Size(211, 33);
-            this.cb_gender.TabIndex = 14;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(341, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 25);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "First Name:";
+            // 
+            // txt_age
+            // 
+            this.txt_age.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_age.Location = new System.Drawing.Point(31, 228);
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(281, 33);
+            this.txt_age.TabIndex = 5;
+            // 
+            // txt_LastN
+            // 
+            this.txt_LastN.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_LastN.Location = new System.Drawing.Point(31, 135);
+            this.txt_LastN.Name = "txt_LastN";
+            this.txt_LastN.Size = new System.Drawing.Size(281, 33);
+            this.txt_LastN.TabIndex = 4;
+            // 
+            // txt_StudentId
+            // 
+            this.txt_StudentId.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_StudentId.Location = new System.Drawing.Point(31, 46);
+            this.txt_StudentId.Name = "txt_StudentId";
+            this.txt_StudentId.Size = new System.Drawing.Size(281, 33);
+            this.txt_StudentId.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 200);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Age:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Last Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student ID:";
             // 
             // label8
             // 
@@ -226,10 +228,18 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(24, 365);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(959, 238);
@@ -254,6 +264,19 @@
             this.btn_refresh.TabIndex = 5;
             this.btn_refresh.Text = "Refresh";
             this.btn_refresh.UseVisualStyleBackColor = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
             // 
             // FrmClubRegistration
             // 
@@ -300,6 +323,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_refresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
 
